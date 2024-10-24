@@ -12,22 +12,15 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials.map((tutorial) => {
+  return tutorials.map(tutorial => {
     return tutorial
       .split(' ')
-      .map((word) => {
-        if (word === 'OO') return 'OO'
-        if (word === 'API') return 'API'
-        if (word === 'NaN') return 'NaN'
-        if (word === 'JSONP') return 'JSONP'
-        if (word === 'stopPropagation') return 'StopPropagation'
-        if (word === 'preventDefault') return 'PreventDefault'
+      .map(word => {
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
       })
       .join(' ')
   })
 }
+console.log(titleCased());
 
-
-console.log(titleCased())
 
