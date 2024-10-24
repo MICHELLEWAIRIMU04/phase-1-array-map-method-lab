@@ -30,3 +30,4 @@ const titleCased = () => {
 
 
 console.log(titleCased())
+
