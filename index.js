@@ -16,7 +16,16 @@ const titleCased = () => {
     return tutorial
       .split(' ')
       .map(word => {
+       if (word.includes('stopPropagation')) {
+          return 'StopPropagation'
+        } else if (word.includes ('JSONP')) {
+          return 'JSONP'
+        } else  if (word.includes('preventDefault')) {
+          return 'PreventDefault'
+        
+        }
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        
       })
       .join(' ')
   })
