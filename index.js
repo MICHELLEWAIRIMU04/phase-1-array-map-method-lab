@@ -19,11 +19,16 @@ const titleCased = () => {
        if (word.includes('stopPropagation')) {
           return 'StopPropagation'
         } else if (word.includes ('JSONP')) {
-          return 'JSONP'
+          return 'JSONP?'
         } else  if (word.includes('preventDefault')) {
-          return 'PreventDefault'
-        
-        }
+          return 'PreventDefault?'
+        }else if (word.includes('NaN')) {
+          return 'NaN'
+        }else if (word.includes('API')) {
+          return 'API'
+        }else if (word.includes('OO')) {
+          return 'OO'
+        }else 
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
         
       })
